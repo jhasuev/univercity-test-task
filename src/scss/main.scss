@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-canvas {
-  width: 100%;
-}
+@import "reset.scss";
+@import "game-container.scss";
+@import "map.scss";
