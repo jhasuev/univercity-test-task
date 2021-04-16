@@ -1,7 +1,11 @@
 @import "reset.scss";
-@import "game-container.scss";
-@import "map.scss";
-@import "npc.scss";
-@import "footer.scss";
-@import "slider.scss";
-@import "friend.scss";
+@import "fonts.scss";
+@import "common.scss";
+@import "components/game-container.scss";
+@import "components/map.scss";
+@import "components/npc.scss";
+@import "components/footer.scss";
+@import "components/slider.scss";
+@import "components/friend.scss";
+@import "components/btn-icon.scss";
+@import "components/btn-text.scss";

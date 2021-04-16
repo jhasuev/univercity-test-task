@@ -4,11 +4,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 17px 18px 4px;
+  padding: 0 15px 18px;
 
   display: flex;
   align-items: center;
 
   &__item {
+    margin-right: 4px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

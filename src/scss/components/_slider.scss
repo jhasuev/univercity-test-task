@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
 
-  background: url("../../assets/img/slider-bg-left.png") no-repeat;
+  background: url("../../assets/img/icons/slider-bg-left.png") no-repeat;
 
   &:before,
   &:after {
@@ -27,13 +27,20 @@
   &:after {
     left: 26px;
     right: 26px;
-    background: url("../../assets/img/slider-bg-repeater.png") repeat-x;
+    background: url("../../assets/img/icons/slider-bg-repeater.png") repeat-x;
   }
 
   &__prev,
   &__next {
     width: 16px;
     height: 29px;
+    cursor: pointer;
+
+    &.disabled,
+    &[disabled] {
+      filter: brightness(0.5);
+      cursor: default;
+    }
   }
 
   &__prev {

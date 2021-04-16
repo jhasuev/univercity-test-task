@@ -1,0 +1,46 @@
+.btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative;
+
+  min-width: 48px;
+  height: 63px;
+  padding: 10px 23px;
+  
+  background: url("../../assets/img/icons/btn-bg-left.png") no-repeat;
+
+  font: 33px Cambria;
+  color: #fff;
+
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    filter: contrast(2);
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+  }
+
+  &:before {
+    width: 26px;
+    right: 0;
+    background: inherit;
+    transform: scaleX(-1);
+  }
+
+  &:after {
+    left: 24px;
+    right: 24px;
+    background: url("../../assets/img/icons/btn-bg-repeater.png") repeat-x;
+  }
+}
