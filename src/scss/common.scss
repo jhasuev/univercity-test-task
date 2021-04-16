@@ -5,3 +5,11 @@ body {
 .text-center {
   text-align: center;
 }
+
+.is-friend {
+  display: block;
+  width: 30px;
+  height: 29px;
+  background: url("../../assets/img/icons/friend-bg.png") repeat-x;
+  background-size: 100% 100%;
+}
