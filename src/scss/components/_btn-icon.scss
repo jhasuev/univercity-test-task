@@ -47,4 +47,14 @@
       background: url("../../assets/img/icons/btn-stats-hover.png");
     }
   }
+
+  &--close {
+    width: 26px;
+    height: 26px;
+
+    background: url("../../assets/img/icons/btn-close-default.png");
+    &:after {
+      background: url("../../assets/img/icons/btn-close-hover.png");
+    }
+  }
 }
