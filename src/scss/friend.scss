@@ -1,0 +1,21 @@
+.friend {
+  position: relative;
+  
+  width: 50px;
+  height: 51px;
+  background: url("../../assets/img/friend-bg.png");
+  
+  &__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
+    margin: auto;
+  }
+}
