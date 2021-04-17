@@ -3,6 +3,7 @@ import Slider from "./classes/Slider"
 import Friends from "./classes/Friends"
 import Modals from "./classes/Modals"
 import Tabs from "./classes/Tabs"
+import Stats from "./classes/Stats"
 import data from "./../assets/data.json"
 
 const friends = new Friends(".js-friends")
@@ -17,7 +18,11 @@ friends.draw(data.friends).then(() => {
 
 const modals = new Modals()
 modals.onOpen("stats", () => {
-  // обработать статистику
+  const weekStats = new Stats(".js-stats-week")
+  const weekCommon = new Stats(".js-stats-common")
+  weekStats.draw(data.rating, data.friends)
+  // дублирование для наглядности
+  weekCommon.draw([...data.rating, ...data.rating], data.friends)
 })
 
 const tabs = new Tabs()
