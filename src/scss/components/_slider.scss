@@ -1,35 +1,6 @@
 .slider {
-  position: relative;
-  height: 63px;
-  padding: 0 9px;
-
   display: flex;
   align-items: center;
-
-  background: url("../../assets/img/icons/slider-bg-left.png") no-repeat;
-  // todo: вынести стили фона отдельно от слайдера
-
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    height: 100%;
-  }
-
-  &:before {
-    width: 26px;
-    right: 0;
-    background: inherit;
-    transform: scaleX(-1);
-  }
-
-  &:after {
-    left: 26px;
-    right: 26px;
-    background: url("../../assets/img/icons/slider-bg-repeater.png") repeat-x;
-  }
 
   &__prev,
   &__next {
