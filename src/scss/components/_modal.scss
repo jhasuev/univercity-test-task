@@ -1,5 +1,4 @@
 .modals {
-  // display: none;
   position: absolute;
   z-index: 9999999;
   top: 0;
@@ -8,7 +7,14 @@
   bottom: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  display: none !important;
+
+  opacity: 0;
+  visibility: hidden;
+  
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
 
   &__inner {
     position: relative;
@@ -18,10 +24,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: inherit;
   }
 
   &__item {
-    // display: none;
     position: relative;
     z-index: 1;
     width: 100%;
@@ -33,6 +39,17 @@
 
     border: 5px solid #85582C;
     background: radial-gradient(#CE9E6B, #9E6B35);
+
+    transform: translateY(-20%);
+    opacity: 0;
+    visibility: hidden;
+    transition: inherit;
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0%);
+    }
   }
 
   &__bg {

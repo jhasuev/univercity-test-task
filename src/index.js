@@ -1,6 +1,7 @@
 import './scss/main.scss'
 import Slider from "./classes/Slider"
 import Friends from "./classes/Friends"
+import Modals from "./classes/Modals"
 import data from "./../assets/data.json"
 
 const friends = new Friends(".js-friends")
@@ -13,6 +14,9 @@ friends.draw(data.friends).then(() => {
   })
 })
 
-// открытие/закрытие модальки
-// обработать статистику
+const modals = new Modals()
+modals.onOpen("stats", () => {
+  // обработать статистику
+})
+
 // двигать npc
