@@ -4,6 +4,7 @@ import Friends from "./classes/Friends"
 import Modals from "./classes/Modals"
 import Tabs from "./classes/Tabs"
 import Stats from "./classes/Stats"
+import Npc from "./classes/Npc"
 import data from "./../assets/data.json"
 
 const friends = new Friends(".js-friends")
@@ -26,4 +27,12 @@ modals.onOpen("stats", () => {
 })
 
 const tabs = new Tabs()
-// двигать npc
+const player = new Npc({
+  npc: ".js-player",
+  positions: data.positions
+})
+
+const univercityBtn = document.querySelector(".js-player-move")
+univercityBtn.addEventListener("click", () => {
+  player.move()
+})

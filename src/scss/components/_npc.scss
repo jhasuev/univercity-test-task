@@ -1,7 +1,5 @@
 .npc {
   position: absolute;
-  top: 505px;
-  left: 444px;
 
   transform: translate(-50%, -100%);
 
@@ -10,4 +8,9 @@
 
   background: url("./../../assets/img/npc.png");
   background-size: 100% 100%;
+
+  &.move {
+    animation: move 3s forwards linear;
+    will-change: left, top;
+  }
 }
