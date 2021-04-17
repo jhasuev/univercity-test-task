@@ -49,13 +49,52 @@
             </div>
             <buton class="modals__close  js-modals-close btn-icon btn-icon--close"></buton>
             <div class="modals__content">
-              <div class="tabs">
+              <div class="tabs  js-tabs">
                 <div class="tabs-head">
-                  <div class="tabs-head-item active">Недельный</div>
-                  <div class="tabs-head-item">Общий</div>
+                  <div class="tabs-head-item  active  js-tabs-buttons-item" data-tab="week">Недельный</div>
+                  <div class="tabs-head-item  js-tabs-buttons-item" data-tab="common">Общий</div>
                 </div>
                 <div class="tabs-content">
-                  <div class="tabs-content-item">
+                  <div data-tab-content="week" class="tabs-content-item  js-tabs-content-item  active">
+                    
+                    <table class="table" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <th class="table__col table__col--head">Место</th>
+                        <th class="table__col table__col--head"></th>
+                        <th class="table__col table__col--head table__col--naming">Имя Фамилия</th>
+                        <th class="table__col table__col--head">Опыт</th>
+                      </tr>
+                      <tr>
+                        <td class="table__col">1</td>
+                        <td class="table__col"></td>
+                        <td class="table__col table__col--naming">Ваш друг</td>
+                        <td class="table__col">1000</td>
+                      </tr>
+                      <tr>
+                        <td class="table__col">1</td>
+                        <td class="table__col">
+                          <i class="is-friend"></i>
+                        </td>
+                        <td class="table__col table__col--naming">Ваш друг</td>
+                        <td class="table__col">1000</td>
+                      </tr>
+                      <tr>
+                        <td class="table__col">1</td>
+                        <td class="table__col"></td>
+                        <td class="table__col table__col--naming">Ваш друг</td>
+                        <td class="table__col">1000</td>
+                      </tr>
+                      <tr>
+                        <td class="table__col">1</td>
+                        <td class="table__col"></td>
+                        <td class="table__col table__col--naming">Ваш друг</td>
+                        <td class="table__col">1000</td>
+                      </tr>
+                    </table>
+
+                  </div>
+
+                  <div data-tab-content="common" class="tabs-content-item  js-tabs-content-item">
                     
                     <table class="table" cellpadding="0" cellspacing="0">
                       <tr>
