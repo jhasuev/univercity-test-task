@@ -1,4 +1,5 @@
 body {
+  font-family: Arial, serif;
   user-select: none;
 }
 
@@ -12,4 +13,17 @@ body {
   height: 29px;
   background: url("../../assets/img/icons/friend-bg.png") repeat-x;
   background-size: 100% 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }

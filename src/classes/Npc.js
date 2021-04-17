@@ -6,7 +6,7 @@ export default class Npc {
   init(data) {
     this.positions = data.positions || []
     this.positionIndex = 0
-    this.speed = data.speed || 800
+    this.speed = data.speed || 1200
     this.npc = document.querySelector(data.npc)
 
     if (this.npc) {

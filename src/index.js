@@ -36,3 +36,4 @@ const univercityBtn = document.querySelector(".js-player-move")
 univercityBtn.addEventListener("click", () => {
   player.move()
 })
+

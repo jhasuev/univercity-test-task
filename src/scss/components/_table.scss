@@ -8,12 +8,15 @@
     position: relative;
     z-index: 1;
     height: 29px + 7px;
+    padding-top: 5px;
+    vertical-align: top;
 
-    font: 13px Arial;
+    font-size: 13px;
     color: #fff;
 
     &:first-child {
-      padding: 0 16px;
+      padding-left: 16px;
+      padding-right: 16px;
       background: url("../../assets/img/icons/table-col-bg-left.png") no-repeat;
       &:before {
         left: 24px;
@@ -51,6 +54,8 @@
     }
 
     &--head {
+      padding-top: 7px;
+
       &:first-child {
         background-image: url("../../assets/img/icons/table-head-bg-left.png");
       }
@@ -70,6 +75,6 @@
   }
 
   .is-friend {
-    margin-top: -9px;
+    margin-top: -6px;
   }
 }
