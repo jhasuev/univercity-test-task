@@ -7,6 +7,7 @@
   align-items: center;
 
   background: url("../../assets/img/icons/slider-bg-left.png") no-repeat;
+  // todo: вынести стили фона отдельно от слайдера
 
   &:before,
   &:after {
@@ -49,7 +50,11 @@
 
   &__list {
     margin: 0 6px;
-    display: flex;
+    overflow: hidden;
+    &-inner {
+      display: flex;
+    }
+
     &-item {
       margin-right: 10px;
       &:last-child {
