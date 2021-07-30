@@ -15,6 +15,11 @@ export default class Npc {
     }
   }
 
+  resetPosition() {
+    this.positionIndex = 0
+    this.setCurrentPosition()
+  }
+
   move() {
     if (this.moving) return;
 
@@ -38,7 +43,8 @@ export default class Npc {
   }
 
   onFinished() {
-    alert("passed all points...");
+    const event = new Event("finish")
+    dispatchEvent(event)
   }
 
   setCurrentPosition() {

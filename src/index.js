@@ -37,3 +37,7 @@ univercityBtn.addEventListener("click", () => {
   player.move()
 })
 
+window.addEventListener("finish", (e, data) => {
+  alert("finish");
+  player.resetPosition()
+})
