@@ -1,12 +1,40 @@
 .game-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -630px;
+  left: -980px;
+  right: -980px;
+  bottom: -630px;
   margin: auto;
 
   width: 980px;
   height: 630px;
   background: linear-gradient(to bottom, #159485, #006B5F);
+  box-shadow: 0 0 20px 2px rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+@mixin small-2x {
+  .game-container {
+    transform: scale(.5);
+  }
+}
+
+@mixin small-4x {
+  .game-container {
+    transform: scale(.25);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  @include small-2x;
+}
+@media screen and (max-height: 630px) {
+  @include small-2x;
+}
+
+@media screen and (max-width: 490px) {
+  @include small-4x;
+}
+@media screen and (max-height: 315px) {
+  @include small-4x;
 }
