@@ -2,6 +2,7 @@
   position: absolute;
 
   transform: translate(-50%, -100%);
+  will-change: left, top;
 
   width: 21px;
   height: 69px;
@@ -11,6 +12,5 @@
 
   &.move {
     animation: move 3s forwards linear;
-    will-change: left, top;
   }
 }
